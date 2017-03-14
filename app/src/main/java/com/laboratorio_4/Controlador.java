@@ -1,5 +1,6 @@
 package com.laboratorio_4;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -14,7 +15,7 @@ import LogicaNegocio.Usuario;
  * Created by SheshoVega on 13/03/2017.
  */
 
-public class Controlador {
+public class Controlador implements Serializable{
     Usuario currentUser;
     Carrera currentCarrera;
     ArrayList<Ciclo> currentCiclos;
@@ -27,6 +28,8 @@ public class Controlador {
         initEstudiante();
         this.currentNumExpe = 1234;
         this.currentEstadoEst = "Activo";
+        currentCursos=new ArrayList<>();
+        currentCiclos=new ArrayList<>();
         initCiclos();
         initCursos();
     }
@@ -37,16 +40,16 @@ public class Controlador {
 
     private void initEstudiante(){
         currentCarrera = new Carrera("IF0123","Informatica y Computacion","INGENIERIA EN SISTEMAS DE INFORMACIÓN ");
-        currentEstudiante = new Estudiante("Juanito Perez","12345678","87654321","juanito@gmail.com","Heredia, Lagunilla.",new Date(1990,8,12),currentCarrera, 730);
+        currentEstudiante = new Estudiante("Juanito Perez","12345678","87654321","juanito@gmail.com","Heredia, Lagunilla.","12-02-1999",currentCarrera, 730);
     }
 
     private void initCiclos(){
-        Ciclo c1 = new Ciclo(2014, 1, new Date(2014,2,10), new Date(2014,6,15));
-        Ciclo c2 = new Ciclo(2014, 2, new Date(2014,7,25), new Date(2014,11,15));
-        Ciclo c3 = new Ciclo(2015, 1, new Date(2014,2,10), new Date(2014,6,15));
-//        Ciclo c4 = new Ciclo(2015, 2, new Date(2014,7,25), new Date(2014,11,15));
-//        Ciclo c5 = new Ciclo(2016, 1, new Date(2014,2,10), new Date(2014,6,15));
-//        Ciclo c6 = new Ciclo(2016, 2, new Date(2014,7,25), new Date(2014,11,15));
+        Ciclo c1 = new Ciclo(2014, 1);
+        Ciclo c2 = new Ciclo(2014, 2);
+        Ciclo c3 = new Ciclo(2015, 1);
+//        Ciclo c4 = new Ciclo(2015, 2);
+//        Ciclo c5 = new Ciclo(2016, 1);
+//        Ciclo c6 = new Ciclo(2016, 2);
 
         currentCiclos.add(c1);
         currentCiclos.add(c2);

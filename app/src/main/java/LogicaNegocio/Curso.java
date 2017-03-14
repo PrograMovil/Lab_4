@@ -93,4 +93,8 @@ public class Curso implements Serializable {
     public void setNota(int nota) {
         this.nota = nota;
     }
+
+    public int getNota() {
+        return this.nota;
+    }
 }
