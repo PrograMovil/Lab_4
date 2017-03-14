@@ -2,16 +2,16 @@
 package LogicaNegocio;
 
 
-public class Usuario {
+import java.io.Serializable;
+
+public class Usuario implements Serializable{
     
     private String id;
     private String clave;
-    private int tipo;
 
-    public Usuario(String id, String clave, int tipo) {
+    public Usuario(String id, String clave) {
         this.id = id;
         this.clave = clave;
-        this.tipo = tipo;
     }
 
     public String getId() {
@@ -29,13 +29,4 @@ public class Usuario {
     public void setClave(String clave) {
         this.clave = clave;
     }
-
-    public int getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
-    }
-        
 }
