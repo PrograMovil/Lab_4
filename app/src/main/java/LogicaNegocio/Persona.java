@@ -1,18 +1,22 @@
 package LogicaNegocio;
 
 
-public class Persona {
+import java.io.Serializable;
+
+public class Persona implements Serializable{
     
     private String nombre;
     private String cedula;
     private String telefono;
     private String email;
+    private String direccion;
 
-    public Persona(String nombre, String cedula, String telefono, String email) {
+    public Persona(String nombre, String cedula, String telefono, String email, String direccion) {
         this.nombre = nombre;
         this.cedula = cedula;
         this.telefono = telefono;
         this.email = email;
+        this.direccion = direccion;
     }
 
     public String getNombre() {
@@ -46,5 +50,12 @@ public class Persona {
     public void setEmail(String email) {
         this.email = email;
     }
-        
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
 }

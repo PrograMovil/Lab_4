@@ -1,10 +1,11 @@
 
 package LogicaNegocio;
 
+import java.io.Serializable;
 import java.util.Date;
 
 
-public class Ciclo {
+public class Ciclo implements Serializable{
     private int anio;
     private int numero;
     private Date fechaInicio;

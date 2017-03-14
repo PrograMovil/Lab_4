@@ -1,7 +1,9 @@
 
 package LogicaNegocio;
 
-public class Curso {
+import java.io.Serializable;
+
+public class Curso implements Serializable {
     private String codigo;
     private String nombre;
     private int creditos;
@@ -9,6 +11,7 @@ public class Curso {
     private Ciclo ciclo;
     private Carrera carrera;
     private String nivel;
+    private int nota;
     
 
     public Curso(String codigo, String nombre, int creditos, int horasSemanales, Ciclo ciclo, Carrera carrera, String nivel) {
@@ -86,5 +89,8 @@ public class Curso {
     public void setNivel(String nivel) {
         this.nivel = nivel;
     }
-    
+
+    public void setNota(int nota) {
+        this.nota = nota;
+    }
 }
