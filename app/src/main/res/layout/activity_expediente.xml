@@ -70,15 +70,6 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-<<<<<<< HEAD
-            android:layout_height="48dp">
-
-            <TextView
-                android:text="Estado Estudiante:"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textEstado"
-=======
             android:layout_height="28dp">
 
             <TextView
@@ -86,20 +77,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textNumExpediente"
->>>>>>> 82708c2f6f0729d95d3d85b8d1189a77cde7a07e
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textStyle="normal|bold" />
 
             <TextView
-<<<<<<< HEAD
-                android:text=""
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/estado"
-                android:textAppearance="@style/TextAppearance.AppCompat" />
-
-        </LinearLayout>
-=======
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/NumExpediente"
@@ -149,29 +130,28 @@
 
         </LinearLayout>
 
->>>>>>> 82708c2f6f0729d95d3d85b8d1189a77cde7a07e
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="48dp">
+            android:layout_height="34dp">
 
             <TextView
-                android:text="Ponderato total:"
+                android:text="Ponderado: "
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textPonde"
+                android:id="@+id/textpondearado"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textStyle="normal|bold" />
 
             <TextView
-                android:text=""
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/ponderado"
+                android:id="@+id/ponderado1"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
         </LinearLayout>
+
 
 
         <TableLayout
