@@ -26,7 +26,7 @@ public class Login extends AppCompatActivity {
 
         EditText username = (EditText) findViewById(R.id.username);
         EditText password = (EditText) findViewById(R.id.password);
-        Intent intent=new Intent(Login.this,ExpedienteActivity.class);
+        Intent intent=new Intent(Login.this,DatosUsuario.class);
         controlador.acceder(username.getText().toString(),password.getText().toString());
         Usuario user = new Usuario(username.getText().toString(),password.getText().toString());
         intent.putExtra("controlador", controlador);

@@ -1,8 +1,12 @@
 package com.laboratorio_4;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
+
 
 public class DatosUsuario extends AppCompatActivity {
     Controlador controlador;
@@ -27,6 +31,15 @@ public class DatosUsuario extends AppCompatActivity {
         carrera.setText(controlador.currentCarrera.getTitulo());
         direccion.setText(controlador.currentEstudiante.getDireccion());
         fechaNac.setText(controlador.currentEstudiante.getFechaNac());
-        notaAdmi.setText(controlador.currentEstudiante.getNotaAdmi());
+        notaAdmi.setText(""+controlador.currentEstudiante.getNotaAdmi());
+    }
+
+    public void irExpediente(View v){
+
+        Intent intent=new Intent(DatosUsuario.this,ExpedienteActivity.class);
+        intent.putExtra("controlador", controlador);
+
+        DatosUsuario.this.startActivity(intent);
+
     }
 }

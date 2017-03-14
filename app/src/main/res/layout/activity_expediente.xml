@@ -48,7 +48,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="48dp">
+            android:layout_height="26dp">
 
             <TextView
                 android:text="Codigo:"
@@ -70,6 +70,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_height="48dp">
 
             <TextView
@@ -77,10 +78,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textEstado"
+=======
+            android:layout_height="28dp">
+
+            <TextView
+                android:text="Numero de Expediente: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textNumExpediente"
+>>>>>>> 82708c2f6f0729d95d3d85b8d1189a77cde7a07e
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textStyle="normal|bold" />
 
             <TextView
+<<<<<<< HEAD
                 android:text=""
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -88,6 +99,57 @@
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
         </LinearLayout>
+=======
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/NumExpediente"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="27dp">
+
+            <TextView
+                android:text="Nota de Admision: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textNotaAd"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/NotaAmision"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="34dp">
+
+            <TextView
+                android:text="Condicion del Estudiante: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textcondicion"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/condicion1"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        </LinearLayout>
+
+>>>>>>> 82708c2f6f0729d95d3d85b8d1189a77cde7a07e
 
         <LinearLayout
             android:orientation="horizontal"
@@ -127,7 +189,8 @@
                     android:id="@+id/textCiclo"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:textStyle="normal|bold"
-                    android:padding="3dip"/>
+                    android:padding="5dip"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:text="Grupo"
@@ -136,7 +199,8 @@
                     android:id="@+id/textGrupo"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:textStyle="normal|bold"
-                    android:padding="3dip"/>
+                    android:padding="5dip"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:text="Materia"
@@ -145,7 +209,8 @@
                     android:id="@+id/textMateria"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:textStyle="normal|bold"
-                    android:padding="6dip"/>
+                    android:padding="9dip"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:text="Calificacion"
@@ -154,7 +219,8 @@
                     android:id="@+id/textCalificacion"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:textStyle="normal|bold"
-                    android:padding="3dip"/>
+                    android:padding="5dip"
+                    android:textAlignment="center" />
             </TableRow>
 
             <TableRow
@@ -164,22 +230,27 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/ciclo1" />
+                    android:id="@+id/ciclo1"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/grupo1" />
+                    android:id="@+id/grupo1"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/materia1" />
+                    android:id="@+id/materia1"
+                    android:textAlignment="center"
+                    android:padding="5dip"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/calificacion1" />
+                    android:id="@+id/calificacion1"
+                    android:textAlignment="center" />
             </TableRow>
 
             <TableRow
@@ -189,22 +260,27 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/ciclo2" />
+                    android:id="@+id/ciclo2"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/grupo2" />
+                    android:id="@+id/grupo2"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/materia2" />
+                    android:id="@+id/materia2"
+                    android:textAlignment="center"
+                    android:padding="5dip"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/calificacion2" />
+                    android:id="@+id/calificacion2"
+                    android:textAlignment="center" />
             </TableRow>
 
             <TableRow
@@ -214,22 +290,27 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/ciclo3" />
+                    android:id="@+id/ciclo3"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/grupo3" />
+                    android:id="@+id/grupo3"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/materia3" />
+                    android:id="@+id/materia3"
+                    android:textAlignment="center"
+                    android:padding="5dip"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/calificacion3" />
+                    android:id="@+id/calificacion3"
+                    android:textAlignment="center" />
             </TableRow>
 
             <TableRow
@@ -239,22 +320,27 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/ciclo4" />
+                    android:id="@+id/ciclo4"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/grupo4" />
+                    android:id="@+id/grupo4"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/materia4" />
+                    android:id="@+id/materia4"
+                    android:textAlignment="center"
+                    android:padding="5dip"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/calificacion4" />
+                    android:id="@+id/calificacion4"
+                    android:textAlignment="center" />
             </TableRow>
 
             <TableRow
@@ -264,22 +350,27 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/ciclo5" />
+                    android:id="@+id/ciclo5"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/grupo5" />
+                    android:id="@+id/grupo5"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/materia5" />
+                    android:id="@+id/materia5"
+                    android:textAlignment="center"
+                    android:padding="5dip"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/calificacion5" />
+                    android:id="@+id/calificacion5"
+                    android:textAlignment="center" />
             </TableRow>
 
             <TableRow
@@ -289,22 +380,27 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/ciclo6" />
+                    android:id="@+id/ciclo6"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/grupo6" />
+                    android:id="@+id/grupo6"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/materia6" />
+                    android:id="@+id/materia6"
+                    android:textAlignment="center"
+                    android:padding="5dip"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/calificacion6" />
+                    android:id="@+id/calificacion6"
+                    android:textAlignment="center" />
             </TableRow>
         </TableLayout>
 

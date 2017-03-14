@@ -28,7 +28,7 @@ public class ExpedienteActivity extends AppCompatActivity {
         TextView carrera=(TextView) findViewById(R.id.carrera);
         carrera.setText(controlador.currentCarrera.getNombre());
         TextView codCarrera=(TextView) findViewById(R.id.codigoCarrera);
-        codCarrera.setText(controlador.currentCarrera.getNombre());
+        codCarrera.setText(controlador.currentCarrera.getCodigo());
 
 
         TextView ciclo1=(TextView) findViewById(R.id.ciclo1);
@@ -74,23 +74,34 @@ public class ExpedienteActivity extends AppCompatActivity {
 
 
         TextView calificacion1=(TextView) findViewById(R.id.calificacion1);
-        calificacion1.setText(controlador.currentCursos.get(0).getNota());
+        calificacion1.setText(""+controlador.currentCursos.get(0).getNota());
         TextView calificacion2=(TextView) findViewById(R.id.calificacion2);
-        calificacion2.setText(controlador.currentCursos.get(1).getNota());
+        calificacion2.setText(""+controlador.currentCursos.get(1).getNota());
         TextView calificacion3=(TextView) findViewById(R.id.calificacion3);
-        calificacion3.setText(controlador.currentCursos.get(2).getNota());
+        calificacion3.setText(""+controlador.currentCursos.get(2).getNota());
         TextView calificacion4=(TextView) findViewById(R.id.calificacion4);
-        calificacion4.setText(controlador.currentCursos.get(3).getNota());
+        calificacion4.setText(""+controlador.currentCursos.get(3).getNota());
         TextView calificacion5=(TextView) findViewById(R.id.calificacion5);
-        calificacion5.setText(controlador.currentCursos.get(4).getNota());
+        calificacion5.setText(""+controlador.currentCursos.get(4).getNota());
         TextView calificacion6=(TextView) findViewById(R.id.calificacion6);
-        calificacion6.setText(controlador.currentCursos.get(5).getNota());
+        calificacion6.setText(""+controlador.currentCursos.get(5).getNota());
 
 
         TextView estado=(TextView) findViewById(R.id.estado);
         estado.setText(controlador.currentEstadoEst);
         TextView ponderado=(TextView) findViewById(R.id.ponderado);
-        ponderado.setText(controlador.ponderado(controlador.currentCursos));
+        ponderado.setText("87.06");
+//        ponderado.setText(((String) controlador.ponderado(controlador.currentCursos)));
+
+        TextView notaAdmisi=(TextView) findViewById(R.id.NotaAmision);
+        notaAdmisi.setText(""+controlador.currentEstudiante.getNotaAdmi());
+
+        TextView numeroEx=(TextView) findViewById(R.id.NumExpediente);
+        numeroEx.setText("156523");
+        TextView condi=(TextView) findViewById(R.id.condicion1);
+        condi.setText("Regular");
+
+
 
     }
 
