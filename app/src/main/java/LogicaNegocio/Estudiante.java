@@ -32,4 +32,8 @@ public class Estudiante extends Persona {
     public void setNotaAdmi(int notaAdmi) {
         this.notaAdmi = notaAdmi;
     }
+
+    public int getNotaAdmi() {
+        return notaAdmi;
+    }
 }

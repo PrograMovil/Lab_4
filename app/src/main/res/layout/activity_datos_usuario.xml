@@ -120,12 +120,60 @@
                 />
 
             <TextView
-                android:text=""
-                android:gravity="right"
+                android:id="@+id/direccion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="0.23">
+            <TextView
+                android:text="Fecha de Nacimiento:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/textView3"
-                android:layout_margin="10dp"/>
+                android:padding="3dip"
+                android:layout_margin="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/fechaNac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="0.23">
+            <TextView
+                android:text="Nota admisión:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:padding="3dip"
+                android:layout_margin="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/notaAdmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:text="" />
         </LinearLayout>
 
         <Button
