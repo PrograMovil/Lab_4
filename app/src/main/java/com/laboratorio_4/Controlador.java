@@ -81,4 +81,14 @@ public class Controlador implements Serializable{
         currentCursos.add(c6);
 
     }
+    private float ponderado(ArrayList<Curso> cursos){
+        float sumCredC1 = 0;
+        float sumCredC2 = 0;
+        float sumCredC3 = 0;
+        sumCredC1 = ((cursos.get(0).getNota() * cursos.get(0).getCreditos()) + (cursos.get(1).getNota() * cursos.get(1).getCreditos()))/(cursos.get(0).getCreditos()+cursos.get(1).getCreditos());
+        sumCredC2 = ((cursos.get(2).getNota() * cursos.get(2).getCreditos()) + (cursos.get(3).getNota() * cursos.get(3).getCreditos()))/(cursos.get(2).getCreditos()+cursos.get(3).getCreditos());
+        sumCredC3 = ((cursos.get(4).getNota() * cursos.get(4).getCreditos()) + (cursos.get(5).getNota() * cursos.get(5).getCreditos()))/(cursos.get(4).getCreditos()+cursos.get(5).getCreditos());
+
+        return sumCredC1 + sumCredC2 + sumCredC3 / 3;
+    }
 }
