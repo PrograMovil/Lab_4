@@ -87,7 +87,10 @@ public class ExpedienteActivity extends AppCompatActivity {
         calificacion6.setText(controlador.currentCursos.get(5).getNota());
 
 
-
+        TextView estado=(TextView) findViewById(R.id.estado);
+        estado.setText(controlador.currentEstadoEst);
+        TextView ponderado=(TextView) findViewById(R.id.ponderado);
+        ponderado.setText(controlador.ponderado(controlador.currentCursos));
 
     }
 

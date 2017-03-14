@@ -81,7 +81,7 @@ public class Controlador implements Serializable{
         currentCursos.add(c6);
 
     }
-    private float ponderado(ArrayList<Curso> cursos){
+    public float ponderado(ArrayList<Curso> cursos){
         float sumCredC1 = 0;
         float sumCredC2 = 0;
         float sumCredC3 = 0;
