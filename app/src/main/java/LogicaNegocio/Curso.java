@@ -95,6 +95,6 @@ public class Curso implements Serializable {
     }
 
     public int getNota() {
-        return this.nota;
+        return nota;
     }
 }
